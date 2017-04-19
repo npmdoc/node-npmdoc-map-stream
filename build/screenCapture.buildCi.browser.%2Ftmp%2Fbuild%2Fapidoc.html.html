@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="http://github.com/dominictarr/map-stream"
-
-    >map-stream (v0.0.7)</a>
+    <a href="http://github.com/dominictarr/map-stream">map-stream (v0.0.7)</a>
 </h1>
 <h4>construct pipes of streams of events</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.map-stream">module map-stream</a><ol>
 
@@ -97,7 +90,7 @@
     , inNext = false
 
   opts = opts || {};
-  var errorEventName = opts.failures ? &#x27;failure&#x27; : &#x27;error&#x27;;
+  var errorEventName = opts.failures ? 'failure' : 'error';
 
   // Items that are not ready to be written yet (because they would come out of
   // order) get stuck in a queue for later.
@@ -110,9 +103,9 @@
     var nextToWrite = lastWritten + 1
 
     if (number === nextToWrite) {
-      // If it&#x27;s next, and its not undefined write it
+      // If it's next, and its not undefined write it
       if (data !== undefined) {
-        stream.emit.apply(stream, [&#x27;data&#x27;, data])
+        stream.emit.apply(stream, ['data', data])
       }
       lastWritten ++
       nextToWrite ++
@@ -130,7 +123,7 @@
 
     outputs ++
     if(inputs === outputs) {
-      if(paused) paused = false, stream.emit(&#x27;drain&#x27;) //written all the incoming events
+      if(paused) paused = false, stream.emit('drain') //written all the incoming events
       if(ended) end()
     }
   }
@@ -159,7 +152,7 @@
   }
 
   stream.write = function (data) {
-    if(ended) throw new Error(&#x27;map stream is not writable&#x27;)
+    if(ended) throw new Error('map stream is not writable')
     inNext = false
     inputs ++
 
@@ -180,12 +173,12 @@
 
   function end (data) {
     //if end was called with args, write it,
-    ended = true //write will emit &#x27;end&#x27; if ended is true
+    ended = true //write will emit 'end' if ended is true
     stream.writable = false
     if(data !== undefined) {
       return queueData(data, inputs)
     } else if (inputs == outputs) { //wait for processing
-      stream.readable = false, stream.emit(&#x27;end&#x27;), stream.destroy()
+      stream.readable = false, stream.emit('end'), stream.destroy()
     }
   }
 
@@ -198,7 +191,7 @@
     ended = destroyed = true
     stream.writable = stream.readable = paused = false
     process.nextTick(function () {
-      stream.emit(&#x27;close&#x27;)
+      stream.emit('close')
     })
   }
   stream.pause = function () {
@@ -223,3 +216,4 @@
     ]
 </div>
 </div>
+</body></html>
