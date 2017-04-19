@@ -1,9 +1,14 @@
-# api documentation for  [map-stream (v0.0.7)](http://github.com/dominictarr/map-stream)  [![npm package](https://img.shields.io/npm/v/npmdoc-map-stream.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-map-stream) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-map-stream.svg)](https://travis-ci.org/npmdoc/node-npmdoc-map-stream)
+# npmdoc-map-stream
+
+#### api documentation for  [map-stream (v0.0.7)](http://github.com/dominictarr/map-stream)  [![npm package](https://img.shields.io/npm/v/npmdoc-map-stream.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-map-stream) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-map-stream.svg)](https://travis-ci.org/npmdoc/node-npmdoc-map-stream)
+
 #### construct pipes of streams of events
 
-[![NPM](https://nodei.co/npm/map-stream.png?downloads=true)](https://www.npmjs.com/package/map-stream)
+[![NPM](https://nodei.co/npm/map-stream.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/map-stream)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-map-stream/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-map-stream_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-map-stream/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-map-stream/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-map-stream/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-map-stream/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-map-stream/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-map-stream/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "Dominic Tarr",
-        "email": "dominic.tarr@gmail.com",
         "url": "http://dominictarr.com"
     },
     "bugs": {
@@ -44,13 +48,11 @@
     "license": "MIT",
     "maintainers": [
         {
-            "name": "dominictarr",
-            "email": "dominic.tarr@gmail.com"
+            "name": "dominictarr"
         }
     ],
     "name": "map-stream",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/dominictarr/map-stream.git"
@@ -61,16 +63,6 @@
     "version": "0.0.7"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module map-stream](#apidoc.module.map-stream)
-
-
-
-# <a name="apidoc.module.map-stream"></a>[module map-stream](#apidoc.module.map-stream)
 
 
 
